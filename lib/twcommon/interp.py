@@ -83,7 +83,7 @@ class Link(InterpNode):
     @staticmethod
     def looks_url_like(val):
         val = val.strip()
-        if val.startswith('http:'):
+        if val.startswith('http:') or val.startswith('https:'):
             return True
         return False
         
